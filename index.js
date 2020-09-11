@@ -14,7 +14,6 @@ function clearBoard(){
 function start(){
   if(gameStarted === 0) {
     gameStarted = 1;
-    score = 0;
     scoreDisplay.innerText = 'Score: ' + score;
     scoreDisplay.id = 'score';
     startDisplay.innerText = 'Pause';
@@ -36,6 +35,7 @@ function start(){
     startDisplay.innerText = 'Unpause';
     clearInterval(timer);
     timer = null;
+    clearBoard();
   }
  }
 
