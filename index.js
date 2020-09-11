@@ -16,12 +16,14 @@ function start(){
     gameStarted = 1;
     score = 0;
     scoreDisplay.innerText = 'Score: ' + score;
+    scoreDisplay.id = 'score';
     startDisplay.innerText = 'Pause';
     timer = setInterval(function () {
       const randomHoleIndex = Math.floor(Math.random() * holes.length);
       holes[randomHoleIndex].classList.toggle('mole');
       if (score === 5) {
         scoreDisplay.innerText = 'You Win!';
+        scoreDisplay.id = 'won';
         gameStarted = 0;
         score = 0;
         clearBoard()

@@ -12,7 +12,11 @@ body {
 h1 {
   font-size: 4em;
   line-height: 0.1em;
-  } 
+} 
+
+#won {
+  color: #6d0f0f;
+}
 
 #whack-a-mole {
   background-image: url("images/grass.jpg");
